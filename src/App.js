@@ -336,8 +336,10 @@ const JavaScript =  () => {
 
 const Courses = () => {
    return (
-      <div>
-          <ul> 
+      <div className="main-content courses">
+         <div className="course-header group">
+         <h2>Courses</h2>
+          <ul className="course-nav"> 
              <li>  <NavLink exact to="/courses/html"> HTML </NavLink> </li>
              <li>  <NavLink to="/courses/css"> CSS </NavLink> </li>
              <li>  <NavLink to="/courses/javascript"> JavaScript </NavLink> </li>            
@@ -351,6 +353,7 @@ const Courses = () => {
             <Route path = "/courses/css" component = {CSS}/>
             <Route path = "/courses/javascript" component = {JavaScript}/>
           </Switch>
+          </div>
       </div>
    );   
 }
