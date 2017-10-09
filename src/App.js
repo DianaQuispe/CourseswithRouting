@@ -321,24 +321,19 @@ const Courses = () => {
         <br />
         <ul className="course-nav">
           <li>
-            {" "}
             <NavLink exact to="/courses/html">
-              {" "}
               HTML{" "}
             </NavLink>{" "}
           </li>
           <li>
-            {" "}
-            <NavLink to="/courses/css"> CSS </NavLink>{" "}
+            <NavLink to="/courses/css"> CSS </NavLink>
           </li>
           <li>
-            {" "}
-            <NavLink to="/courses/javascript"> JavaScript </NavLink>{" "}
+            <NavLink to="/courses/javascript"> JavaScript </NavLink>
           </li>
         </ul>
         <br />
         <br />
-
         <Switch>
           <Route
             exact
@@ -358,7 +353,6 @@ const Courses = () => {
 const NotFoundPage = props => {
   return (
     <div>
-      {" "}
       <h2> Error 404! </h2>{" "}
     </div>
   );
