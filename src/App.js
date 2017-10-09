@@ -338,12 +338,12 @@ const Courses = () => {
    return (
       <div className="main-content courses">
          <div className="course-header group">
-         <h2>Courses</h2>
+         <h2>Courses</h2><br/><br/>
           <ul className="course-nav"> 
              <li>  <NavLink exact to="/courses/html"> HTML </NavLink> </li>
              <li>  <NavLink to="/courses/css"> CSS </NavLink> </li>
              <li>  <NavLink to="/courses/javascript"> JavaScript </NavLink> </li>            
-          </ul>
+          </ul><br/><br/>
 
           <Switch> 
             <Route exact path= "/courses" 
@@ -366,15 +366,20 @@ const NotFoundPage = (props) => {
 
 const App = () => (
   <BrowserRouter>
-    <div>
-      <ul>
+  <div className="main-content">
+    <div data-reactroot className="container">
+      <header>
+          <span className="icn-logo">
+            <i className="material-icons">code</i>
+          </span>
+          <ul className="main-nav">
         <li><NavLink to="/">Home</NavLink></li>
         <li><NavLink to="/about">About</NavLink></li> 
         <li><NavLink to="/teachers">Teachers</NavLink></li> 
         <li><NavLink to="/courses">Courses</NavLink></li> 
                 
       </ul>
-
+      </header>
       <hr/>
       <Switch>
          <Route exact path="/" component={Home}/>
@@ -384,6 +389,7 @@ const App = () => (
          
          <Route component={NotFoundPage}/>
       </Switch>
+    </div>
     </div>
   </BrowserRouter>
 )
